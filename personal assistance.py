@@ -1,20 +1,13 @@
 
-"""
-Simple Personal Assistant - Input/Output Project
-Prompts the user for personal information, summarizes it, and optionally saves it.
-"""
-
 import random
 
 def get_user_data():
-    # Required questions (always asked)
+    
     required_questions = [
         ("name", "What is your name? "),
         ("age", "How old are you? ")
     ]
 
-    # Fun optional questions to randomize
-    
     optional_questions = [
         ("color", "What is your favorite color? "),
         ("food", "What is your favorite food? "),
@@ -23,12 +16,9 @@ def get_user_data():
         ("team", "What is your favorite soccer team? ")
     ]
 
-    # Select 2 to 4 optional questions randomly
-    
+
     selected_optional = random.sample(optional_questions, k=random.randint(2, 4))
 
-    # Combine required and selected optional questions
-    
     all_questions = required_questions + selected_optional
     responses = {}
 
@@ -56,6 +46,7 @@ def display_summary(responses):
     if 'team' in responses:
         print(f"Go {responses['team']}!")
 
+
 def save_to_file(responses, rating):
     filename = f"{responses.get('name', 'user')}.txt"
     with open(filename, 'w', encoding='utf-8') as f:
@@ -65,6 +56,7 @@ def save_to_file(responses, rating):
             f.write(f"{key.capitalize()}: {value}\n")
         f.write(f"Rating: {rating}/5\n")
     print(f"Summary saved to {filename}")
+
 
 def main():
     while True:
