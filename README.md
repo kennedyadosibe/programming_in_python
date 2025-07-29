@@ -2,7 +2,7 @@
 
 A simple command-line tool built as part of a programming assignment. This tool collects personal details from the user and displays a fun, customized summary. It also includes options to save the summary, rate the assistant, and restart the process.
 
-## 🧠 Assignment Goal
+## Assignment Goal
 
 To demonstrate basic programming principles such as:
 - Taking user input
@@ -11,7 +11,7 @@ To demonstrate basic programming principles such as:
 - Control flow (loops, conditionals)
 - Randomization (bonus)
 
-## 🛠 Features
+## Features
 
 - Asks the user for personal details:
   - Name
@@ -27,11 +27,3 @@ To demonstrate basic programming principles such as:
 - Asks the user to rate the assistant (1 to 5 stars) and saves the rating
 - *Bonus*: Randomized questions for a unique experience each time
 
-## 🚀 How to Run
-
-1. Clone or download this repository.
-2. Open the folder in your terminal or IDE.
-3. Run the Python script using:
-
-```bash
-python assistant.py
