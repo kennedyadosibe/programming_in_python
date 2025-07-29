@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+
 """
 Simple Personal Assistant - Input/Output Project
 Prompts the user for personal information, summarizes it, and optionally saves it.
@@ -15,6 +14,7 @@ def get_user_data():
     ]
 
     # Fun optional questions to randomize
+    
     optional_questions = [
         ("color", "What is your favorite color? "),
         ("food", "What is your favorite food? "),
@@ -24,9 +24,11 @@ def get_user_data():
     ]
 
     # Select 2 to 4 optional questions randomly
+    
     selected_optional = random.sample(optional_questions, k=random.randint(2, 4))
 
     # Combine required and selected optional questions
+    
     all_questions = required_questions + selected_optional
     responses = {}
 
@@ -84,7 +86,7 @@ def main():
 
         again = input("\nDo you want to restart the process? (yes/no): ").strip().lower()
         if again != "yes":
-            print("Goodbye! 😊")
+            print("Goodbye! 👋")
             break
 
 if __name__ == "__main__":
