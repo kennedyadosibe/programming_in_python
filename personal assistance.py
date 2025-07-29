@@ -1,9 +1,7 @@
-
 import random
 
-def get_user_data():
-    
-    required_questions = [
+def get_user_data():  
+  required_questions = [
         ("name", "What is your name? "),
         ("age", "How old are you? ")
     ]
