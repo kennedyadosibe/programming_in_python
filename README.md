@@ -148,7 +148,7 @@ programming_in_python/
 - ✅ Professional formatting
 
 ### Testing & Documentation
-- ✅ Comprehensive unit test suite (20+ tests)
+- ✅ Comprehensive unit test suite (15 tests)
 - ✅ Integration tests
 - ✅ Updated README with examples
 - ✅ requirements.txt file
