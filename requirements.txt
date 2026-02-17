@@ -1,0 +1,15 @@
+# Personal Info Summary Assistant Requirements
+# Python 3.7+
+
+# No external dependencies required for basic functionality
+# The application uses only Python standard library modules:
+# - random
+# - json
+# - os
+# - datetime
+# - typing
+
+# Development dependencies (optional)
+# For running tests, uncomment the following:
+# pytest>=7.0.0
+# pytest-cov>=3.0.0
